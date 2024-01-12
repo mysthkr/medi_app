@@ -4,8 +4,9 @@ RUN apt-get update -qq && apt-get install -y postgresql-client
 
 RUN mkdir /apps
 WORKDIR /apps
-
-COPY Gemfile     ./ 
+RUN ls
+RUN pwd
+COPY Gemfile ./ 
 COPY Gemfile.lock ./Gemfile.lock
 RUN bundle install
 
