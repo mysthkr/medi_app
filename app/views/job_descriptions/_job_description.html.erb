@@ -1,0 +1,87 @@
+<div id="<%= dom_id job_description %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Title:</strong>
+    <%= job_description.title %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Content:</strong>
+    <%= job_description.content %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Company name:</strong>
+    <%= job_description.company_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Emphasis content:</strong>
+    <%= job_description.emphasis_content %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Job category:</strong>
+    <%= job_description.job_category %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Job content:</strong>
+    <%= job_description.job_content %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Target:</strong>
+    <%= job_description.target %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Salary:</strong>
+    <%= job_description.salary %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Work times:</strong>
+    <%= job_description.work_times %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Benefits:</strong>
+    <%= job_description.benefits %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Holiday:</strong>
+    <%= job_description.holiday %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Work place:</strong>
+    <%= job_description.work_place %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Access:</strong>
+    <%= job_description.access %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Selection flow:</strong>
+    <%= job_description.selection_flow %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Interview address:</strong>
+    <%= job_description.interview_address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Company:</strong>
+    <%= job_description.company_id %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this job description", job_description, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this job description", edit_job_description_path(job_description), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
