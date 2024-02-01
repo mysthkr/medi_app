@@ -1,0 +1,2 @@
+class CandidatesJobDescription < ApplicationRecord
+end

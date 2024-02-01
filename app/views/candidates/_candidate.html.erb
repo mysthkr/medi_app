@@ -1,0 +1,32 @@
+<div id="<%= dom_id candidate %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Full name:</strong>
+    <%= candidate.full_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Full name kana:</strong>
+    <%= candidate.full_name_kana %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= candidate.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Password:</strong>
+    <%= candidate.password %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Phone number:</strong>
+    <%= candidate.phone_number %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this candidate", candidate, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this candidate", edit_candidate_path(candidate), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
