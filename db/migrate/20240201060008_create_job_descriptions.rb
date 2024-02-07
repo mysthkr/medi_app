@@ -3,7 +3,6 @@ class CreateJobDescriptions < ActiveRecord::Migration[7.0]
     create_table :job_descriptions do |t|
       t.string :title, null: false
       t.text :content
-      t.string :company_name, null: false
       t.text :emphasis_content
       t.string :job_category, null: false
       t.text :job_content, null: false
