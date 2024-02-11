@@ -51,7 +51,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_01_061141) do
   create_table "job_descriptions", force: :cascade do |t|
     t.string "title", null: false
     t.text "content"
-    t.string "company_name", null: false
     t.text "emphasis_content"
     t.string "job_category", null: false
     t.text "job_content", null: false
