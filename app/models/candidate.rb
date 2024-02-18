@@ -10,5 +10,4 @@ class Candidate < ApplicationRecord
   validates :phone_number, presence: true,
                            format: { with: VALID_PHONE_NUMBER__REGEX},
                            uniqueness: true
-  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 end
