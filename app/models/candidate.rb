@@ -5,7 +5,6 @@ class Candidate < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 },
                     format: { with: VALID_EMAIL_REGEX}, 
                     uniqueness: true
-  validates :email, presence: true 
   VALID_PHONE_NUMBER__REGEX = /\A0[5789]0[-]?\d{4}[-]?\d{4}\z/
   validates :phone_number, presence: true,
                            format: { with: VALID_PHONE_NUMBER__REGEX},
