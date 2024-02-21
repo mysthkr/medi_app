@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_01_061141) do
     t.string "full_name", null: false
     t.string "full_name_kana", null: false
     t.string "email", null: false
-    t.string "password", null: false
+    t.string "password"
     t.string "phone_number", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -26,7 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_01_061141) do
   end
 
   create_table "candidates_job_descriptions", force: :cascade do |t|
-    t.bigint "candidate_id", null: false
+    t.bigint "candidate_id"
     t.bigint "job_description_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

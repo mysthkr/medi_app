@@ -4,7 +4,7 @@ class CreateCandidates < ActiveRecord::Migration[7.0]
       t.string :full_name, null: false
       t.string :full_name_kana, null: false
       t.string :email, null: false
-      t.string :password, null: false
+      t.string :password
       t.string :phone_number, null: false
 
       t.timestamps
